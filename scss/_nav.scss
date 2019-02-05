@@ -1,0 +1,25 @@
+.nav {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menuItem {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.menuItem a {
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.menuItem a:hover {
+    font-weight: 700;
+}

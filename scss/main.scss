@@ -1,0 +1,26 @@
+//Palette Yellow
+$colorPrimary1: #FFFD00;
+$colorSecondary1: #BDBC00;
+$colorText1: #414100;
+$colorLight1: #FFFE64;
+$colorLightest1: #FFFFFF;
+
+//Palette Pink
+$colorPrimary2: #E30063;
+$colorSecondary2: #A00046;
+$colorText2: #370018;
+$colorLight2: #DF5793;
+$colorLightest2: #DEDEDE;
+
+//Palette Blue
+$colorPrimary3: #2512C6;
+$colorSecondary3: #140684;
+$colorText3: #05002D;
+$colorLight3: #655ABF;
+$colorLightest3: #BEBEBE;
+
+@import "reset";
+@import "layout";
+@import "header";
+@import "nav";
+
