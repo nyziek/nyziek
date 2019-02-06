@@ -1,14 +1,9 @@
 .myWork {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: $colorPrimary3;
+    background-image: url("../images/3px-tile.png");
 }
 
 .myWorkBox {
-    padding: 2rem;
-    font-size: 3rem;
     background: $colorText3;
     color: $colorPrimary3;
 }

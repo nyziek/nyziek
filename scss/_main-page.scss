@@ -1,15 +1,18 @@
 .home {
-    //padding-top: 5rem;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url("../images/bg_yellow.jpg");
+    background-size: cover;
 }
 
 .welcomeBox {
-    padding: 2rem;
-    font-size: 3rem;
-    background: $colorText1;
+    background: rgba($colorText1, 0.95);
     color: $colorPrimary1;
-    text-align: center;
+}
+
+.welcomeText {
+    font-weight: 700;
+}
+
+.infoText {
+    font-size: 2rem;
+    color: $colorSecondary1
 }

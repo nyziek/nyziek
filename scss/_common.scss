@@ -1,0 +1,19 @@
+.home,
+.me,
+.myWork,
+.contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 5rem;
+    max-height: 85%;
+    max-width: 90%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-size: 3rem;
+    text-align: center;
+}

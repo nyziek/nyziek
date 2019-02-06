@@ -1,14 +1,19 @@
 .contact {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: $colorPrimary4;
+    background-image: url("../images/bg_purple.jpg");
+    background-size: cover;
 }
 
 .contactBox {
-    padding: 2rem;
-    font-size: 3rem;
-    background: $colorText4;
+    background: rgba($colorText4, 0.7);
     color: $colorPrimary4;
+}
+
+.links {
+    padding-top: 1rem;
+}
+
+.links img {
+    height: 2.5rem;
+    width: auto;
 }
