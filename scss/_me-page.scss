@@ -1,0 +1,14 @@
+.me {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $colorPrimary2;
+}
+
+.meBox {
+    padding: 2rem;
+    font-size: 3rem;
+    background: $colorText2;
+    color: $colorPrimary2;
+}

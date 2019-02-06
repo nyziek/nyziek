@@ -1,0 +1,15 @@
+.home {
+    //padding-top: 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeBox {
+    padding: 2rem;
+    font-size: 3rem;
+    background: $colorText1;
+    color: $colorPrimary1;
+    text-align: center;
+}

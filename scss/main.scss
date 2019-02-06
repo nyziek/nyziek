@@ -12,15 +12,26 @@ $colorText2: #370018;
 $colorLight2: #DF5793;
 $colorLightest2: #DEDEDE;
 
-//Palette Blue
-$colorPrimary3: #2512C6;
-$colorSecondary3: #140684;
-$colorText3: #05002D;
-$colorLight3: #655ABF;
-$colorLightest3: #BEBEBE;
+//Palette Green
+$colorPrimary3: #8BEF00;
+$colorSecondary3: #64AE00;
+$colorText3: #233C00;
+$colorLight3: #B0ED5D;
+$colorLightest3: #EDEDED;
+
+//Palette Purple
+$colorPrimary4: #7C07C2;
+$colorSecondary4: #51027F;
+$colorText4: #1B002C;
+$colorLight4: #924FBA;
+$colorLightest4: #B8B8B8;
 
 @import "reset";
 @import "layout";
 @import "header";
 @import "nav";
+@import "main-page";
+@import "me-page";
+@import "my-work-page";
+@import "contact-page";
 
