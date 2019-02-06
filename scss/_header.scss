@@ -28,10 +28,105 @@
     align-items: center;
 }
 
+.menu {
+    list-style-type: none;
+}
+
+.menuItem {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.menuItem a {
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.menuItemActive {
+    text-decoration: underline;
+}
+
 .contactMenuItem {
     width: 15%;
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.contactMenuItem a {
+    padding: 0.5rem;
+    padding-right: 0;
+}
+
+//Nav for HOME page
+
+.header a {
+    color: $colorText1;
+}
+
+.header a:hover {
+    color: $colorSecondary1;
+}
+
+.menuItemActive a:hover,
+.logo a:hover {
+    color: $colorText1;
+}
+
+//Nav for ME page
+
+.meHeader {
+    background: $colorPrimary2;
+}
+
+.meHeader a {
+    color: $colorText2;
+}
+
+.meHeader a:hover {
+    color: $colorSecondary2;
+}
+
+.meHeader .menuItemActive a:hover,
+.meHeader .logo a:hover {
+    color: $colorText2;
+}
+
+//Nav for MY WORK page
+
+.myWorkHeader {
+    background: $colorPrimary3;
+}
+
+.myWorkHeader a {
+    color: $colorText3;
+}
+
+.myWorkHeader a:hover {
+    color: $colorSecondary3;
+}
+
+.myWorkHeader .menuItemActive a:hover,
+.myWorkHeader .logo a:hover {
+    color: $colorText3;
+}
+
+//nav for CONTACT page
+
+.contactHeader {
+    background: $colorPrimary4;
+}
+
+.contactHeader a {
+    color: $colorText4;
+}
+
+.contactHeader a:hover {
+    color: $colorSecondary4;
+}
+
+.contactHeader .menuItemActive a:hover,
+.contactHeader .logo a:hover {
+    color: $colorText4;
 }
