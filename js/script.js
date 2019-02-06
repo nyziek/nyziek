@@ -1,27 +1,4 @@
-//CHANGING ACTIVE NAV ITEM ON CLICK
-
-var menu = document.querySelector(".menu");
-var contactMenuItem = document.querySelector(".contactMenuItem");
-
-function changeActiveNavItem(event) {
-
-    console.log("I work");
-
-    var activeNavItem = document.querySelector(".menuItemActive");
-
-    console.log(activeNavItem);
-
-    activeNavItem.classList.remove("menuItemActive");
-
-    console.log(event.target)
-
-    event.target.parentElement.classList.add("menuItemActive");
-}
-
-menu.addEventListener("click", changeActiveNavItem);
-contactMenuItem.addEventListener("click", changeActiveNavItem);
-
-//CHANGING HEADER STYLING ON SCROLL
+//CHANGING HEADER STYLING AND ACTIVE NAV ITEM ON SCROLL
 
 var header = document.querySelector(".header");
 var mePage = document.getElementById("me");
@@ -30,22 +7,33 @@ var contactPage = document.getElementById("contact");
 
 function changeHeader() {
 
-    if (window.pageYOffset + 100 > mePage.offsetTop) {
-        header.classList.add("meHeader");
-    } else {
-        header.classList.remove("meHeader");
-    }
-
-    if (window.pageYOffset + 100 > myWorkPage.offsetTop) {
-        header.classList.add("myWorkHeader");
-    } else {
-        header.classList.remove("myWorkHeader");
-    }
+    var activeNavItem = document.querySelector(".menuItemActive");
+    var menuItem1 = document.querySelector(".menuItem1");
+    var menuItem2 = document.querySelector(".menuItem2");
+    var menuItem3 = document.querySelector(".menuItem3");
+    var contactMenuItem = document.querySelector(".contactMenuItem");
 
     if (window.pageYOffset + 100 > contactPage.offsetTop) {
         header.classList.add("contactHeader");
-    } else {
+        activeNavItem.classList.remove("menuItemActive");
+        contactMenuItem.classList.add("menuItemActive");
+    } else if (window.pageYOffset + 100 > myWorkPage.offsetTop) {
         header.classList.remove("contactHeader");
+        header.classList.add("myWorkHeader");
+        activeNavItem.classList.remove("menuItemActive");
+        menuItem3.classList.add("menuItemActive");
+    } else if (window.pageYOffset + 100 > mePage.offsetTop) {
+        header.classList.remove("myWorkHeader");
+        header.classList.remove("contactHeader");
+        header.classList.add("meHeader");
+        activeNavItem.classList.remove("menuItemActive");
+        menuItem2.classList.add("menuItemActive");
+    } else if (window.pageYOffset + 100 <= mePage.offsetTop) {
+        header.classList.remove("meHeader");
+        header.classList.remove("myWorkHeader");
+        header.classList.remove("contactHeader");
+        activeNavItem.classList.remove("menuItemActive");
+        menuItem1.classList.add("menuItemActive");
     }
 }
 
