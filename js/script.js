@@ -38,6 +38,7 @@ function changeHeader() {
 }
 
 window.onscroll = function() {changeHeader()};
+window.onload = function() {changeHeader()};
 
 //PROJECTS SLIDER
 
