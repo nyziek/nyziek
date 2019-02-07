@@ -7,3 +7,70 @@
     background: $colorText3;
     color: $colorPrimary3;
 }
+
+.sliderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliderNavLeft,
+.sliderNavRight {
+    width: 10%;
+    color: $colorSecondary3;
+    cursor: pointer;
+}
+
+.sliderWindow {
+    width: 80%;
+}
+
+.slideList {
+    list-style-type: none;
+}
+
+.slideList li {
+    display: none;
+}
+
+li.activeSlide {
+    display: inline-block;
+}
+
+.sliderImageHolder {
+    width: 100%;
+    background-size: 33%;
+    background-position: top +18% center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../images/bg_yellow.jpg");
+}
+
+.slide2 {
+    background-image: url("../images/bg_pink.jpg");
+}
+
+.slide3 {
+    background-image: url("../images/bg_purple.jpg");
+}
+
+.sliderImageHolder img {
+    width: 50%;
+}
+
+.projectTitle,
+.projectDescription,
+.projectSpecs {
+    width: 100%
+}
+
+.projectDescription,
+.projectSpecs {
+    font-size: 2rem;
+}
+
+.projectSpecs {
+    color: $colorLightest3;
+}

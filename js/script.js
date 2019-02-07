@@ -38,3 +38,40 @@ function changeHeader() {
 }
 
 window.onscroll = function() {changeHeader()};
+
+//PROJECTS SLIDER
+
+var slides = document.querySelectorAll(".slideList li");
+var leftNavButton = document.querySelector(".sliderNavLeft");
+var rightNavButton = document.querySelector(".sliderNavRight");
+var slideIndex = 0;
+
+console.log(leftNavButton);
+console.log(rightNavButton);
+
+function slideChangeNext() {
+
+    slides[slideIndex].classList.remove("activeSlide");
+    slideIndex++;
+
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    slides[slideIndex].classList.add("activeSlide");
+}
+
+function slideChangePrev() {
+
+    slides[slideIndex].classList.remove("activeSlide");
+    slideIndex--;
+
+    if (slideIndex < 0) {
+        slideIndex = slides.length -1;
+    }
+
+    slides[slideIndex].classList.add("activeSlide");
+}
+
+leftNavButton.onclick = function() {slideChangePrev()};
+rightNavButton.onclick = function() {slideChangeNext()};

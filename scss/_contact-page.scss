@@ -2,6 +2,7 @@
     background: $colorPrimary4;
     background-image: url("../images/bg_purple.jpg");
     background-size: cover;
+    background-position: bottom;
 }
 
 .contactBox {
@@ -13,7 +14,7 @@
     padding-top: 1rem;
 }
 
-.links img {
-    height: 2.5rem;
-    width: auto;
+.links i {
+    font-size: 5rem;
+    color: $colorPrimary4;
 }
