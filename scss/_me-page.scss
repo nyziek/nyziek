@@ -2,6 +2,7 @@
     background: $colorPrimary2;
     background-image: url("../images/bg_pink.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .meBox {
@@ -41,6 +42,8 @@
 
 .emphasizedText {
     font-weight: 700;
+    font-size: 1.5rem;
+    color: $colorLight2;
 }
 
 .skills {

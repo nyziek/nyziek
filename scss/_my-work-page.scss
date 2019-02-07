@@ -31,7 +31,7 @@
     list-style-type: none;
 }
 
-.slideList li {
+.slide {
     display: none;
 }
 
@@ -42,20 +42,20 @@ li.activeSlide {
 .sliderImageHolder {
     width: 100%;
     background-size: 33%;
-    background-position: top +18% center;
+    background-position: top +16% center;
     background-repeat: no-repeat;
 }
 
 .slide1 {
-    background-image: url("../images/bg_yellow.jpg");
+    background-image: url("../images/awesomeblossomart.png");
 }
 
 .slide2 {
-    background-image: url("../images/bg_pink.jpg");
+    background-image: url("../images/oddajrzeczy.png");
 }
 
 .slide3 {
-    background-image: url("../images/bg_purple.jpg");
+    background-image: url("../images/sitonchair.png");
 }
 
 .sliderImageHolder img {
@@ -75,4 +75,20 @@ li.activeSlide {
 
 .projectSpecs {
     color: $colorLightest3;
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.slideList a {
+    width: 12rem;
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: $colorText3;
+    background: $colorPrimary3;
+    border-radius: 0.5rem;
 }
