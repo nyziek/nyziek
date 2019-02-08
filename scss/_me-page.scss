@@ -6,8 +6,8 @@
 }
 
 .meBox {
-    width: 80%;
-    max-height: 80%;
+    width: 90%;
+    max-height: 90%;
     background: rgba($colorText2, 0.75);
     color: $colorPrimary2;
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .imageContainer {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +27,22 @@
     height: auto;
     width: 15%;
     min-width: 10rem;
-    border: 0.1rem dotted $colorSecondary2;
+    margin: 0 0.5rem;
     border-radius: 50%;
+    border: 0.1rem $colorSecondary2 dotted;
+}
+
+.info {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .infoContainer {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .infoContainer p:first-of-type {
@@ -42,15 +51,15 @@
 
 .emphasizedText {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: $colorLight2;
 }
 
 .skills {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1rem;
     color: $colorLightest2;
 }

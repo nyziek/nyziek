@@ -1,6 +1,8 @@
 .myWork {
     background: $colorPrimary3;
-    background-image: url("../images/3px-tile.png");
+    background-image: url("../images/bg_green.jpg");
+    background-size: cover;
+    background-position: top;
 }
 
 .myWorkBox {
@@ -84,11 +86,11 @@ li.activeSlide {
 }
 
 .slideList a {
-    width: 12rem;
+    width: 8rem;
     display: block;
     font-size: 2rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
     color: $colorText3;
     background: $colorPrimary3;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
 }
