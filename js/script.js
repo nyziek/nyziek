@@ -47,9 +47,6 @@ var leftNavButton = document.querySelector(".sliderNavLeft");
 var rightNavButton = document.querySelector(".sliderNavRight");
 var slideIndex = 0;
 
-console.log(leftNavButton);
-console.log(rightNavButton);
-
 function slideChangeNext() {
 
     slides[slideIndex].classList.remove("activeSlide");
