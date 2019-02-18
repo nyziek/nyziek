@@ -75,6 +75,13 @@
     }
 
     .imageContainer img {
+        height: 10rem;
+    }
+}
+
+@media (max-height: 800px) {
+
+    .imageContainer img {
         height: 5rem;
     }
 }
