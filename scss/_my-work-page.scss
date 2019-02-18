@@ -43,6 +43,7 @@ li.activeSlide {
 
 .sliderImageHolder {
     width: 100%;
+    margin: 0 auto;
     background-size: 33%;
     background-position: top +16% center;
     background-repeat: no-repeat;
@@ -97,4 +98,82 @@ li.activeSlide {
     color: $colorText3;
     background: $colorPrimary3;
     border-radius: 0.4rem;
+}
+
+@media (max-height: 850px) {
+
+    .sliderImageHolder {
+        width: 80%;
+    }
+
+    .projectTitle {
+        font-size: 2.5rem;
+    }
+
+    .projectDescription,
+    .projectSpecs {
+        font-size: 1.5rem;
+    }
+
+    .slideList a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 750px) {
+
+    .sliderImageHolder {
+        width: 60%;
+    }
+
+    .projectTitle {
+        font-size: 2rem;
+    }
+
+    .projectDescription,
+    .projectSpecs {
+        font-size: 1rem;
+    }
+
+    .slideList a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 550px) and (max-width: 1499px){
+
+    .sliderImageHolder {
+        width: 40%;
+    }
+
+    .projectTitle {
+        font-size: 1.5rem;
+    }
+
+    .projectDescription,
+    .projectSpecs {
+        font-size: 0.8rem;
+    }
+
+    .slideList a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-height: 750px) and (min-width: 1100px) {
+
+    li.activeSlide {
+        display: flex;
+        align-items: center;
+    }
+
+    .sliderImageHolder {
+        margin: 0;
+        width: 50%;
+    }
+
+    .sliderInfoHolder {
+        margin: 0;
+        width: 50%;
+    }
 }

@@ -73,11 +73,3 @@ function slideChangePrev() {
 
 leftNavButton.onclick = function() {slideChangePrev()};
 rightNavButton.onclick = function() {slideChangeNext()};
-
-function automaticSlideChange() {
-    setInterval(slideChangeNext, 4000);
-}
-
-if (window.pageYOffset + 100 > myWorkPage.offsetTop) {
-    automaticSlideChange();
-}

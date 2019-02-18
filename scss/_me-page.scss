@@ -2,69 +2,120 @@
     background: $colorPrimary2;
     background-image: url("../images/bg_pink.jpg");
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .meBox {
-    width: 90%;
-    max-height: 90%;
-    background: rgba($colorText2, 0.75);
-    color: $colorPrimary2;
+    width: 100%;
+    min-height: 35rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
+.meBoxInfo {
+    width: 32%;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba($colorText2, 0.75);
+    margin: 0.2rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    color: $colorLightest2;
+    font-size: 1.8vw;
+}
+
 .imageContainer {
-    width: 60%;
+    height: 25%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imageContainer img {
-    height: auto;
-    width: 15%;
-    min-width: 10rem;
+    height: 10vw;
+    width: auto;
     margin: 0 0.5rem;
     border-radius: 50%;
     border: 0.1rem $colorSecondary2 dotted;
 }
 
-.info {
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .infoContainer {
-    width: 100%;
-    font-size: 1.5rem;
+    height: 75%;
+    padding-top: 1rem;
 }
 
-.infoContainer p:first-of-type {
-     margin-bottom: 1rem;
+.infoContainerSmall {
+    height: 100%;
+    padding-top: 0;
 }
 
 .emphasizedText {
     font-weight: 700;
-    font-size: 1.4rem;
-    color: $colorLight2;
+    color: $colorPrimary2;
 }
 
 .skills {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.4rem;
-    padding: 1rem;
-    color: $colorLightest2;
+    padding-top: 1rem;
+    color: $colorLight2;
 }
 
 .skills ul {
-    width: 50%;
     list-style-type: none;
+}
+
+@media (max-height: 1000px) {
+
+    .meBoxInfo {
+        font-size: 4vh;
+    }
+
+    .imageContainer img {
+        height: 5rem;
+    }
+}
+
+@media (max-height: 550px) {
+
+    .meBoxInfo {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1100px) and (min-height: 790px){
+    .meBox {
+        flex-direction: column;
+    }
+
+    .meBoxInfo {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .imageContainer img {
+        height: 5rem;
+        width: auto;
+        margin: 0 0.5rem;
+        border-radius: 50%;
+        border: 0.1rem $colorSecondary2 dotted;
+    }
+}
+
+@media (max-width: 1100px) and (min-height: 1300px) {
+    .meBox {
+        flex-direction: column;
+    }
+
+    .meBoxInfo {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .imageContainer img {
+        height: 10rem;
+    }
 }
