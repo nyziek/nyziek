@@ -58,11 +58,11 @@ li.activeSlide {
 }
 
 .slide3 {
-    background-image: url("../images/sitonchair.png");
+    background-image: url("../images/furry.png");
 }
 
 .slide4 {
-    background-image: url("../images/furry.png");
+    background-image: url("../images/sitonchair.png");
 }
 
 .sliderImageHolder img {
@@ -160,7 +160,7 @@ li.activeSlide {
     }
 }
 
-@media (max-height: 750px) and (min-width: 1100px) {
+@media (max-height: 550px) and (min-width: 1100px) {
 
     li.activeSlide {
         display: flex;
