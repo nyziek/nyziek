@@ -18,11 +18,16 @@
     display: flex;
     flex-direction: column;
     background: rgba($colorText2, 0.75);
-    margin: 0.2rem;
+    margin: 0.5rem;
     padding: 1rem;
     border-radius: 0.3rem;
     color: $colorLightest2;
     font-size: 1.8vw;
+}
+
+.meBoxInfoSmall {
+    background: rgba($colorLightest2, 0.75);
+    color: $colorText2;
 }
 
 .imageContainer {
