@@ -71,5 +71,5 @@ const slideChangePrev = () => {
     slides[slideIndex].classList.add("activeSlide");
 };
 
-leftNavButton.onclick = function() {slideChangePrev()};
-rightNavButton.onclick = function() {slideChangeNext()};
+leftNavButton.onclick = () => {slideChangePrev()};
+rightNavButton.onclick = () => {slideChangeNext()};
