@@ -5,7 +5,7 @@ const mePage = document.getElementById("me");
 const myWorkPage = document.getElementById("myWork");
 const contactPage = document.getElementById("contact");
 
-function changeHeader() {
+const changeHeader = () => {
 
     const activeNavItem = document.querySelector(".menuItemActive");
     const menuItem1 = document.querySelector(".menuItem1");
@@ -35,7 +35,7 @@ function changeHeader() {
         activeNavItem.classList.remove("menuItemActive");
         menuItem1.classList.add("menuItemActive");
     }
-}
+};
 
 window.onscroll = function() {changeHeader()};
 window.onload = function() {changeHeader()};
@@ -47,7 +47,7 @@ const leftNavButton = document.querySelector(".sliderNavLeft");
 const rightNavButton = document.querySelector(".sliderNavRight");
 let slideIndex = 0;
 
-function slideChangeNext() {
+const slideChangeNext = () => {
 
     slides[slideIndex].classList.remove("activeSlide");
     slideIndex++;
@@ -57,9 +57,9 @@ function slideChangeNext() {
     }
 
     slides[slideIndex].classList.add("activeSlide");
-}
+};
 
-function slideChangePrev() {
+const slideChangePrev = () => {
 
     slides[slideIndex].classList.remove("activeSlide");
     slideIndex--;
@@ -69,7 +69,7 @@ function slideChangePrev() {
     }
 
     slides[slideIndex].classList.add("activeSlide");
-}
+};
 
 leftNavButton.onclick = function() {slideChangePrev()};
 rightNavButton.onclick = function() {slideChangeNext()};
