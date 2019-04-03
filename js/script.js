@@ -1,17 +1,17 @@
 //CHANGING HEADER STYLING AND ACTIVE NAV ITEM ON SCROLL
 
-var header = document.querySelector(".header");
-var mePage = document.getElementById("me");
-var myWorkPage = document.getElementById("myWork");
-var contactPage = document.getElementById("contact");
+const header = document.querySelector(".header");
+const mePage = document.getElementById("me");
+const myWorkPage = document.getElementById("myWork");
+const contactPage = document.getElementById("contact");
 
 function changeHeader() {
 
-    var activeNavItem = document.querySelector(".menuItemActive");
-    var menuItem1 = document.querySelector(".menuItem1");
-    var menuItem2 = document.querySelector(".menuItem2");
-    var menuItem3 = document.querySelector(".menuItem3");
-    var contactMenuItem = document.querySelector(".contactMenuItem");
+    const activeNavItem = document.querySelector(".menuItemActive");
+    const menuItem1 = document.querySelector(".menuItem1");
+    const menuItem2 = document.querySelector(".menuItem2");
+    const menuItem3 = document.querySelector(".menuItem3");
+    const contactMenuItem = document.querySelector(".contactMenuItem");
 
     if (window.pageYOffset + 100 > contactPage.offsetTop) {
         header.classList.add("contactHeader");
@@ -42,10 +42,10 @@ window.onload = function() {changeHeader()};
 
 //PROJECTS SLIDER
 
-var slides = document.querySelectorAll(".slideList li");
-var leftNavButton = document.querySelector(".sliderNavLeft");
-var rightNavButton = document.querySelector(".sliderNavRight");
-var slideIndex = 0;
+const slides = document.querySelectorAll(".slideList li");
+const leftNavButton = document.querySelector(".sliderNavLeft");
+const rightNavButton = document.querySelector(".sliderNavRight");
+let slideIndex = 0;
 
 function slideChangeNext() {
 
